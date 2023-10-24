@@ -13,7 +13,7 @@ var bio = {
     },
     welcomeMessage: "Master's student at Georgia Tech focusing on problem-solving.",
     skills: ["Java", "Python", "C/C++", "HTML", "CSS", "JavaScript", "Spring Boot", "REST API"],
-    biopic: "images/fry.jpg", // You should replace "images/fry.jpg" with the actual path to your picture.
+    biopic: "images/Michael.jpg", // You should replace "images/fry.jpg" with the actual path to your picture.
     display: function() {
         // Code to display the bio goes here
         
