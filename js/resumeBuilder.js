@@ -177,3 +177,11 @@ var projects = {
 projects.display();
 
 $('#mapDiv').append(googleMap);
+
+// Logging the click locations
+$(document).click(function(loc) {
+    var x = loc.pageX;
+    var y = loc.pageY;
+    
+    console.log("x location: " + x + "; y location: " + y);
+});
