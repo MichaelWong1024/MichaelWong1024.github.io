@@ -106,10 +106,19 @@ function initializeMap() {
 
   var locations;
 
+  var myLat = 33.7734665885793; // Your latitude
+  var myLng = -84.3960177898407; // Your longitude
+
+  // var mapOptions = {
+  //   disableDefaultUI: true
+  // };
   var mapOptions = {
+    center: new google.maps.LatLng(myLat, myLng), // Set the center to your location
+    zoom: 13, // Adjust zoom level as needed
     disableDefaultUI: true
   };
 
+  
   /*
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js.
