@@ -139,18 +139,18 @@ work.display();
 var projects = {
     projects: [
         {
-            title: "Project 1",
-            dates: "Dates 1",
-            description: "Description 1",
-            images: ["url1", "url2"] // URLs of images related to the project
+            title: "Development of Desktop OpenStreetMap Route Planner",
+            dates: "Date", // specify the dates here
+            description: "Developed a route planning tool using C++ and A* algorithm with OSM data, capable of running both in a terminal and on a virtual desktop, achieving a 15% improvement in route generation time; Enhanced user experience through integrating the visualization library IO2D for interactive route selection and graphical display of paths.",
+            images: [] // add any image URLs here if available
         },
         {
-            title: "Project 2",
-            dates: "Dates 2",
-            description: "Description 2",
-            images: ["url3", "url4"]
-        }
-        // Add more projects here as needed
+            title: "Backend Development for a Used Car Website",
+            dates: "Date", // specify the dates here
+            description: "Engineered a robust Spring Boot backend managed by Maven; integrated REST APIs for efficient vehicle data and pricing management; and an HTTP client for location services, enhancing data retrieval speed by 10%; Strengthened API management and data retrieval through CRUD operations; employed Swagger for comprehensive API documentation and JUnit testing.",
+            images: [] // add any image URLs here if available
+        },
+        // you can continue adding more projects here...
     ],
     display: function() {
         this.projects.forEach(function(project) {
