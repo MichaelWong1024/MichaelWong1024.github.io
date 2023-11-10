@@ -4,29 +4,34 @@ This is empty on purpose! Your code to build the resume will go here.
 
 var bio = {
     name: "Mingzheng (Michael) Huang",
-    role: "Software Engineer",
+    role: "A Problem Solver seeking his first internship",
     contacts: {
-        mobile: "(929) 400-2904",
-        email: "mingzheng.huang1024@gmail.com",
-        github: "MichaelWong1024",
-        location: "756 W Peachtree St NW, Atlanta, GA 30308"
+        '<i class="fas fa-mobile-alt"></i>': '<a href="tel:+19294002904">(929) 400-2904</a>',
+        '<i class="fas fa-envelope"></i>': '<a href="mailto:mingzheng.huang1024@gmail.com">mingzheng.huang1024@gmail.com</a>',
+        '<i class="fab fa-github"></i>': '<a href="https://github.com/MichaelWong1024">GitHub</a>',
+        '<i class="fab fa-linkedin"></i>': '<a href="https://www.linkedin.com/in/mhuang-tech/">LinkedIn</a>',
+        '<i class="fas fa-home"></i>': '<a href="https://cse.gatech.edu/">756 W Peachtree St NW, Atlanta, GA 30308</a>',
     },
     welcomeMessage: "Master's student at Georgia Tech focusing on problem-solving.",
     skills: ["Java", "Python", "C/C++", "HTML", "CSS", "JavaScript", "Spring Boot", "REST API"],
     biopic: "images/me.jpg", // You should replace "images/fry.jpg" with the actual path to your picture.
     display: function() {
         // Code to display the bio goes here
-        
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
         var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
         
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
         
-        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-        var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        // var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+        // var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+        // var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+        // var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+
+        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts['<i class="fas fa-mobile-alt"></i>']);
+        var formattedEmail = HTMLemail.replace("%data%", bio.contacts['<i class="fas fa-envelope"></i>']);
+        var formattedGithub = HTMLgithub.replace("%data%", bio.contacts['<i class="fab fa-github"></i>']);
+        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts['<i class="fas fa-home"></i>']);
         
         $("#topContacts, #footerContacts").append(formattedMobile, formattedEmail, formattedGithub, formattedLocation);
         
