@@ -46,13 +46,32 @@ var bio = {
         
         $("#header").append(formattedBioPic, formattedWelcomeMsg);
         
+        // if (bio.skills.length > 0) {
+        //     $("#header").append(HTMLskillsStart);
+            
+        //     bio.skills.forEach(function(skill) {
+        //         var formattedSkill = HTMLskills.replace("%data%", skill);
+        //         $("#skills").append(formattedSkill);
+        //     });
+        // }
+
         if (bio.skills.length > 0) {
             $("#header").append(HTMLskillsStart);
-            
-            bio.skills.forEach(function(skill) {
-                var formattedSkill = HTMLskills.replace("%data%", skill);
-                $("#skills").append(formattedSkill);
-            });
+        
+            var half_length = Math.ceil(bio.skills.length / 2);
+            var first_half_skills = bio.skills.slice(0, half_length);
+            var second_half_skills = bio.skills.slice(half_length);
+        
+            // Create a container for the two columns
+            $("#skills").append('<div class="skills-container"></div>');
+        
+            // Add the first column of skills
+            var skillsColumn1 = first_half_skills.map(skill => HTMLskills.replace("%data%", skill)).join('');
+            $(".skills-container").append(`<div class='skills-column'>${skillsColumn1}</div>`);
+        
+            // Add the second column of skills
+            var skillsColumn2 = second_half_skills.map(skill => HTMLskills.replace("%data%", skill)).join('');
+            $(".skills-container").append(`<div class='skills-column'>${skillsColumn2}</div>`);
         }
     }
 };

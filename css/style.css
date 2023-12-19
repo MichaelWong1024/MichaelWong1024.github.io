@@ -105,6 +105,15 @@ a {
   justify-content: space-between;
 }
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-column {
+  flex-basis: 48%; /* Adjust the width as necessary */
+}
+
 .orange {
   background-color: #f5ae23;
 }
