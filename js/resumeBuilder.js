@@ -3,11 +3,11 @@ This is empty on purpose! Your code to build the resume will go here.
 */
 
 var bio = {
-    name: "Michael Huang",
+    name: "Michael Wong",
     role: "A Problem Solver seeking his first internship",
     contacts: {
         '<i class="fas fa-mobile-alt"></i>': '<a href="tel:+19294002904">(929) 400-2904</a>',
-        '<i class="fas fa-envelope"></i>': '<a href="mailto:mingzheng.huang1024@gmail.com">mingzheng.huang1024@gmail.com</a>',
+        '<i class="fas fa-envelope"></i>': '<a href="mailto:mhuang339@gatech.edu">mhuang339@gatech.edu</a>',
         '<i class="fab fa-github"></i>': '<a href="https://github.com/MichaelWong1024">GitHub</a>',
         '<i class="fab fa-linkedin"></i>': '<a href="https://www.linkedin.com/in/mhuang-tech/">LinkedIn</a>',
         '<i class="fas fa-home"></i>': '<a href="https://cse.gatech.edu/">756 W Peachtree St NW, Atlanta, GA 30308</a>',
