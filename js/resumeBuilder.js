@@ -102,14 +102,16 @@ education.display();
 var work = {
     jobs: [
         {
-            employer: "Monash University",
+            employer: '<a href="https://www.monash.edu">Monash University',
             title: "Research Assistant",
             location: "Hybrid",
             dates: "2020 - 2021",
-            description: "Participated in two major projects: " +
-                         "1. Analytical Exploration of High-Dimensional Urban Subterranean Space Data via a City Information Modeling (CIM) Platform. " +
-                         "2. Algorithmic Examination through Computational Simulation: Assessing the Topological Parameters of Grain Membranes within Heterogeneous Porous Media. " +
-                         "Utilized MATLAB for various computational and analytical tasks."
+            description: "Project: Fluid Flow Analysis Platform (Published Paper)<br>" +
+                         "<strong>Key Achievements and Responsibilities:</strong><br>" +
+                         "• Developed a C# web application with ASP.NET, incorporating numerical algorithms to analyze geotechnical XML data obtained through the 3rd-party Revit API, specifically for porous rock analysis.<br>" +
+                         "• Optimized backend performance through multi-threading to improve backend performance by more than 10%.<br>" +
+                         "• Utilized mutex and semaphore to avoid race conditions in multithreading environments for robust data processing.<br>" +
+                         "• Used React to create a dynamic interface, allowing users to select parameters and navigate through geological structures for further fluid flow path visualization."
         },
         // Add more jobs here as needed
     ],
@@ -140,15 +142,32 @@ work.display();
 var projects = {
     projects: [
         {
-            title: "Development of Desktop OpenStreetMap Route Planner",
+            title: "Pigeon Location Tracking System",
             dates: "Date", // specify the dates here
-            description: "Developed a route planning tool using C++ and A* algorithm with OSM data, capable of running both in a terminal and on a virtual desktop, achieving a 15% improvement in route generation time; Enhanced user experience through integrating the visualization library IO2D for interactive route selection and graphical display of paths.",
+            description:
+            "• Enabled users to monitor pigeon locations via footbands. Users can create an account and link their footbands to register for new pigeons.<br>" +
+            "• Developed a pigeon real-time location tracking system tool in C++ and improved update latency by 15%.<br>" +
+            "• Implemented JWT (JSON Web Token) for secure user authentication and content personalization.<br>" +
+            "• Developed and refactored a React-based frontend with reusable components to improve code quality and maintainability.<br>" +
+            "• Elevated user satisfaction by 20% through A/B testing to refine the pigeon competition tracking experience.<br>" +
+            "• Designed a Rest API backend in SpringBoot, integrated with the tracking system, providing users with a robust and low latency response.",
             images: [] // add any image URLs here if available
         },
         {
-            title: "Backend Development for a Used Car Website",
+            title: "Design and Implementation of Venue Booking Database",
             dates: "Date", // specify the dates here
-            description: "Engineered a robust Spring Boot backend managed by Maven; integrated REST APIs for efficient vehicle data and pricing management; and an HTTP client for location services, enhancing data retrieval speed by 10%; Strengthened API management and data retrieval through CRUD operations; employed Swagger for comprehensive API documentation and JUnit testing.",
+            description:
+            "• Developed a responsive booking web application with Flask and Bootstrap, backed by PostgreSQL within virtualenv.<br>" +
+            "• Implemented robust backend operations with SQLAlchemy ORM and raw SQL, enhancing data integrity and enabling complex queries.<br>" +
+            "• Integrated form validation and full-text search features and reduced 15% server load to improve user experience.",
+            images: [] // add any image URLs here if available
+        },
+        {
+            title: "Parallelization and Multithreading of Web Crawler",
+            dates: "Date", // specify the dates here
+            description: "• Utilized Java’s Concurrency and Jackson JSON Library for parsing configuration files to modernize a web crawler, achieving a 10% improvement in crawling and document processing speed. <br>" +
+            "• Employed Java’s Stream API and Lambdas to refactor word-counting algorithms for cleaner, functional programming-compliant code. <br>" +
+            "• Built and deployed a custom Java-based profiling tool using Maven and JUnit to validate performance gains, achieving a 15% increase in data capture rates.",
             images: [] // add any image URLs here if available
         },
         // you can continue adding more projects here...
