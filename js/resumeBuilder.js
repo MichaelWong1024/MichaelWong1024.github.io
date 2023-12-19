@@ -3,7 +3,7 @@ This is empty on purpose! Your code to build the resume will go here.
 */
 
 var bio = {
-    name: "Mingzheng (Michael) Huang",
+    name: "Michael Huang",
     role: "A Problem Solver seeking his first internship",
     contacts: {
         '<i class="fas fa-mobile-alt"></i>': '<a href="tel:+19294002904">(929) 400-2904</a>',
@@ -13,7 +13,13 @@ var bio = {
         '<i class="fas fa-home"></i>': '<a href="https://cse.gatech.edu/">756 W Peachtree St NW, Atlanta, GA 30308</a>',
     },
     welcomeMessage: "Master's student at Georgia Tech focusing on problem-solving.",
-    skills: ["Java", "Python", "C/C++", "HTML", "CSS", "JavaScript", "Spring Boot", "REST API"],
+        skills: [
+        "Java", "Python", "C/C++", "C# (Experienced with Object-Oriented Programming)",
+        "HTML", "CSS (Sass)", "React (JavaScript & TypeScript)",
+        "Spring Boot", "ASP.NET", "REST API", "Django", "Node.js", "Express",
+        "MySQL", "PostgreSQL",
+        "Git", "Linux (Bash)", "TensorFlow", "AWS", "Eclipse", "JUnit", "Mocha", "Swagger", "Maven"
+    ],
     biopic: "images/me.jpg", // You should replace "images/fry.jpg" with the actual path to your picture.
     display: function() {
         // Code to display the bio goes here
@@ -67,7 +73,7 @@ var education = {
         {
             "name": "University College Dublin, College of Engineering",
             "location": "Dublin, Ireland",
-            "degree": "Bachelor of Engineering (BE)",
+            "degree": "Bachelor of Engineering (B.Eng.)",
             "majors": ["Engineering"],
             "dates": "Aug.2018 - May.2022",
             "url": "https://www.ucd.ie/engineering/"
@@ -106,7 +112,7 @@ var work = {
             title: "Research Assistant",
             location: "Hybrid",
             dates: "2020 - 2021",
-            description: "Project: Fluid Flow Analysis Platform (Published Paper)<br>" +
+            description: "Project: Fluid Flow Analysis Platform <a href=\"https://pubmed.ncbi.nlm.nih.gov/34436350/\">(Published Paper)<br>" +
                          "<strong>Key Achievements and Responsibilities:</strong><br>" +
                          "• Developed a C# web application with ASP.NET, incorporating numerical algorithms to analyze geotechnical XML data obtained through the 3rd-party Revit API, specifically for porous rock analysis.<br>" +
                          "• Optimized backend performance through multi-threading to improve backend performance by more than 10%.<br>" +
@@ -179,8 +185,8 @@ var projects = {
             var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
             $(".project-entry:last").append(formattedTitle);
 
-            var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
-            $(".project-entry:last").append(formattedDates);
+            // var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
+            // $(".project-entry:last").append(formattedDates);
 
             var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
             $(".project-entry:last").append(formattedDescription);
