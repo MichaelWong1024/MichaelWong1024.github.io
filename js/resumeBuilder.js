@@ -5,12 +5,16 @@ This is empty on purpose! Your code to build the resume will go here.
 var bio = {
     name: "Mingzheng (Michael) Huang",
     role: "Software Engineer",
-    contacts: {
-        mobile: "(929) 400-2904",
-        email: "mingzheng.huang1024@gmail.com",
-        github: "MichaelWong1024",
-        location: "756 W Peachtree St NW, Atlanta, GA 30308"
-    },
+    
+        contacts: {
+            '📱': '<a href="tel:+19294002904">(929) 400-2904</a>',
+            '<i class="fas fa-envelope"></i>': '<a href="mailto:mhuang339@gatech.edu">mhuang339@gatech.edu</a>',
+            '<i class="fab fa-github"></i>': '<a href="https://github.com/MichaelWong1024">GitHub</a>',
+            '<i class="fab fa-linkedin"></i>': '<a href="https://www.linkedin.com/in/mhuang-tech/">LinkedIn</a>',
+            '<i class="fas fa-home"></i>': '<a href="https://cse.gatech.edu/">756 W Peachtree St NW, Atlanta, GA 30308</a>',
+            '<i class="fas fa-globe"></i>': '<a href="https://michaelwong1024.github.io/">Personal Website</a>'
+        },
+        
     welcomeMessage: "Master's student at Georgia Tech focusing on problem-solving.",
     skills: ["Java", "Python", "C/C++", "HTML", "CSS", "JavaScript", "Spring Boot", "REST API"],
     biopic: "images/me.jpg", // You should replace "images/fry.jpg" with the actual path to your picture.
@@ -97,19 +101,15 @@ education.display();
 var work = {
     jobs: [
         {
-            employer: "Company 1",
-            title: "Job Title 1",
-            location: "Location 1",
-            dates: "Dates 1",
-            description: "Description 1"
+            employer: "Monash University",
+            title: "Research Assistant",
+            location: "Hybrid",
+            dates: "2020 - 2021",
+            description: "Participated in two major projects: " +
+                         "1. Analytical Exploration of High-Dimensional Urban Subterranean Space Data via a City Information Modeling (CIM) Platform. " +
+                         "2. Algorithmic Examination through Computational Simulation: Assessing the Topological Parameters of Grain Membranes within Heterogeneous Porous Media. " +
+                         "Utilized MATLAB for various computational and analytical tasks."
         },
-        {
-            employer: "Company 2",
-            title: "Job Title 2",
-            location: "Location 2",
-            dates: "Dates 2",
-            description: "Description 2"
-        }
         // Add more jobs here as needed
     ],
     display: function() {
