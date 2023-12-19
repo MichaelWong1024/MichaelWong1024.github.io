@@ -4,7 +4,7 @@ This is empty on purpose! Your code to build the resume will go here.
 
 var bio = {
     name: "Michael Wong",
-    role: "A Problem Solver seeking his first internship",
+    role: "A Problem Solver seeking for Software Development Engineer Internship in Summer 2024",
     contacts: {
         '<i class="fas fa-mobile-alt"></i>': '<a href="tel:+19294002904">(929) 400-2904</a>',
         '<i class="fas fa-envelope"></i>': '<a href="mailto:mhuang339@gatech.edu">mhuang339@gatech.edu</a>',
